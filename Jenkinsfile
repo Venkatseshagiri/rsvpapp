@@ -29,7 +29,7 @@ spec:
         }
     }
   environment {
-      IMAGE_REPO = "<DOCKERHUB_USER>/rsvp"
+      IMAGE_REPO = "Venkatseshagiri//rsvpapp"
       // Instead of DOCKERHUB_USER, use your Dockerhub name
   }
   stages {
@@ -50,8 +50,8 @@ spec:
     stage('Deploy') {
       environment {
         GIT_CREDS = credentials('github')
-        HELM_GIT_REPO_URL = "github.com/<GITHUB_USERNAME>/rsvpapp-helm-cicd.git"
-        GIT_REPO_EMAIL = '<PUT_EMAIL_ID>'
+        HELM_GIT_REPO_URL = "github.com/Venkatseshagiri/rsvpapp-helm-cicd.git"
+        GIT_REPO_EMAIL = 'Venkat.s.seshagiri@gmail.com'
         GIT_REPO_BRANCH = "master"
           
        // Update above variables with your user details
