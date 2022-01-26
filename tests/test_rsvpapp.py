@@ -2,7 +2,6 @@ import rsvp
 import mongomock
 import unittest
 import json
-
 class BaseTest:
     def setup_method(self, method):
         rsvp.client = mongomock.MongoClient()
